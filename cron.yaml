@@ -1,0 +1,8 @@
+cron:
+- description: gather pledge dynamics
+  url: /makerecord
+  schedule: every 30 mins
+
+- description: count news and tweets
+  url: /news
+  schedule: every day 4:50
