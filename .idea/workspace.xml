@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="390dcfde-f4c8-4e64-bbe1-65659b12f3fe" name="Default" comment="" />
+    <list default="true" id="390dcfde-f4c8-4e64-bbe1-65659b12f3fe" name="Default" comment="testing github">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/news.py" afterPath="$PROJECT_DIR$/news.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+    </list>
     <ignored path="kickstarter-scrape.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -46,21 +49,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="news.py" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="news.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/news.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="21" column="40" selection-start="523" selection-end="523" vertical-scroll-proportion="-12.24" vertical-offset="72" max-vertical-offset="2160">
+            <state line="83" column="14" selection-start="4723" selection-end="5004" vertical-scroll-proportion="0.80597013" vertical-offset="1584" max-vertical-offset="2178">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="discover.py" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="discover.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/discover.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="47" column="14" selection-start="1960" selection-end="1960" vertical-scroll-proportion="0.8735363" vertical-offset="473" max-vertical-offset="1638">
+            <state line="11" column="45" selection-start="381" selection-end="381" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1656">
               <folding>
-                <element signature="e#0#11#0" expanded="true" />
+                <element signature="e#16#27#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -128,14 +131,14 @@
         <option value="$PROJECT_DIR$/conf.py" />
         <option value="$PROJECT_DIR$/manual-restart.py" />
         <option value="$PROJECT_DIR$/main.py" />
-        <option value="$PROJECT_DIR$/news.py" />
         <option value="$PROJECT_DIR$/cron.yaml" />
         <option value="$PROJECT_DIR$/discover.py" />
+        <option value="$PROJECT_DIR$/news.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="37" />
+    <option name="x" value="114" />
     <option name="y" value="30" />
     <option name="width" value="1320" />
     <option name="height" value="793" />
@@ -494,12 +497,22 @@
       <created>1397920465778</created>
       <updated>1397920465778</updated>
     </task>
+    <task id="LOCAL-00001" summary="testing github">
+      <created>1398685931241</created>
+      <updated>1398685931241</updated>
+    </task>
+    <task id="LOCAL-00002" summary="testing github">
+      <created>1398686091716</created>
+      <updated>1398686091716</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="37" y="30" width="1320" height="793" extended-state="0" />
+    <frame x="114" y="30" width="1320" height="793" extended-state="0" />
     <editor active="false" />
     <layout>
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -509,7 +522,7 @@
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3295129" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3295129" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -547,6 +560,8 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
+    <MESSAGE value="testing github" />
+    <option name="LAST_COMMIT_MESSAGE" value="testing github" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -628,20 +643,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/main.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="48" column="0" selection-start="1349" selection-end="1349" vertical-scroll-proportion="0.0" vertical-offset="396" max-vertical-offset="1026">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/news.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="40" selection-start="523" selection-end="523" vertical-scroll-proportion="-12.24" vertical-offset="72" max-vertical-offset="2160">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/cron.yaml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="5" column="36" selection-start="126" selection-end="126" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="234">
@@ -658,12 +659,26 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="48" column="0" selection-start="1349" selection-end="1349" vertical-scroll-proportion="0.0" vertical-offset="396" max-vertical-offset="1026">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/discover.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="47" column="14" selection-start="1960" selection-end="1960" vertical-scroll-proportion="0.8735363" vertical-offset="473" max-vertical-offset="1638">
+        <state line="11" column="45" selection-start="381" selection-end="381" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1656">
           <folding>
-            <element signature="e#0#11#0" expanded="true" />
+            <element signature="e#16#27#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/news.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="83" column="14" selection-start="4723" selection-end="5004" vertical-scroll-proportion="0.80597013" vertical-offset="1584" max-vertical-offset="2178">
+          <folding />
         </state>
       </provider>
     </entry>

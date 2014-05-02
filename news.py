@@ -10,6 +10,7 @@ from bs4 import BeautifulSoup
 from conf import *
 from twython import Twython
 
+
 def twitter_count():
 
     #Set parameters
@@ -76,7 +77,7 @@ url = "https://www.google.com/search?pz=1&cf=all&hl=en&tbm=nws&gl=en&as_q=kickst
 
 def google_count():
     r = requests.get(url, headers=hdr)
-    soup = BeautifulSoup(r.text)
+    soup = BeautifulSoup(r.text.encode('utf-8'))
     line = str(soup.find("div", {"id": "resultStats"}))
     text = re.findall(r'About ([0-9]+,?[0-9]*) results', line)
     num = int(text[0].replace(',', ''))
