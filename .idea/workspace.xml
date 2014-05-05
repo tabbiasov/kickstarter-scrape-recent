@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="390dcfde-f4c8-4e64-bbe1-65659b12f3fe" name="Default" comment="testing github">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/news.py" afterPath="$PROJECT_DIR$/news.py" />
+    <list default="true" id="390dcfde-f4c8-4e64-bbe1-65659b12f3fe" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cron.yaml" afterPath="$PROJECT_DIR$/cron.yaml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="kickstarter-scrape.iws" />
@@ -34,7 +34,7 @@
       <file leaf-file-name="app.yaml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app.yaml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="22" selection-start="132" selection-end="132" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="450">
+            <state line="8" column="22" selection-start="132" selection-end="132" vertical-scroll-proportion="0.0" vertical-offset="144" max-vertical-offset="450">
               <folding />
             </state>
           </provider>
@@ -43,16 +43,16 @@
       <file leaf-file-name="main.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="48" column="0" selection-start="1349" selection-end="1349" vertical-scroll-proportion="0.0" vertical-offset="396" max-vertical-offset="1026">
+            <state line="48" column="0" selection-start="1349" selection-end="1349" vertical-scroll-proportion="0.0" vertical-offset="864" max-vertical-offset="1026">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="news.py" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="news.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/news.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="83" column="14" selection-start="4723" selection-end="5004" vertical-scroll-proportion="0.80597013" vertical-offset="1584" max-vertical-offset="2178">
+            <state line="77" column="18" selection-start="4727" selection-end="4741" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1764">
               <folding />
             </state>
           </provider>
@@ -61,10 +61,8 @@
       <file leaf-file-name="discover.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/discover.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="45" selection-start="381" selection-end="381" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1656">
-              <folding>
-                <element signature="e#16#27#0" expanded="true" />
-              </folding>
+            <state line="11" column="45" selection-start="381" selection-end="381" vertical-scroll-proportion="0.0" vertical-offset="198" max-vertical-offset="1656">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -72,21 +70,17 @@
       <file leaf-file-name="manual-restart.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/manual-restart.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="37" column="34" selection-start="1024" selection-end="1024" vertical-scroll-proportion="0.0" vertical-offset="473" max-vertical-offset="1440">
-              <folding>
-                <element signature="e#0#15#0" expanded="true" />
-              </folding>
+            <state line="37" column="34" selection-start="1024" selection-end="1024" vertical-scroll-proportion="0.0" vertical-offset="666" max-vertical-offset="1440">
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="cron.yaml" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="cron.yaml" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/cron.yaml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="36" selection-start="126" selection-end="126" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="234">
-              <folding>
-                <marker date="1398556530000" expanded="true" signature="0:166" placeholder="cron:" />
-              </folding>
+            <state line="6" column="12" selection-start="139" selection-end="139" vertical-scroll-proportion="0.16744186" vertical-offset="0" max-vertical-offset="645">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -94,10 +88,8 @@
       <file leaf-file-name="conf.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/conf.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="43" column="4" selection-start="1254" selection-end="1365" vertical-scroll-proportion="0.0" vertical-offset="545" max-vertical-offset="972">
-              <folding>
-                <element signature="e#0#38#0" expanded="true" />
-              </folding>
+            <state line="43" column="4" selection-start="1254" selection-end="1365" vertical-scroll-proportion="0.0" vertical-offset="774" max-vertical-offset="972">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -131,9 +123,9 @@
         <option value="$PROJECT_DIR$/conf.py" />
         <option value="$PROJECT_DIR$/manual-restart.py" />
         <option value="$PROJECT_DIR$/main.py" />
-        <option value="$PROJECT_DIR$/cron.yaml" />
         <option value="$PROJECT_DIR$/discover.py" />
         <option value="$PROJECT_DIR$/news.py" />
+        <option value="$PROJECT_DIR$/cron.yaml" />
       </list>
     </option>
   </component>
@@ -505,29 +497,33 @@
       <created>1398686091716</created>
       <updated>1398686091716</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="redefined google_count to decode response to utf-8">
+      <created>1399036981078</created>
+      <updated>1399036981078</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="114" y="30" width="1320" height="793" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25" sideWeight="0.6704871" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26766092" sideWeight="0.65824664" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3295129" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3415638" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -561,7 +557,8 @@
       <TodoPanelSettings />
     </option>
     <MESSAGE value="testing github" />
-    <option name="LAST_COMMIT_MESSAGE" value="testing github" />
+    <MESSAGE value="redefined google_count to decode response to utf-8" />
+    <option name="LAST_COMMIT_MESSAGE" value="redefined google_count to decode response to utf-8" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -569,6 +566,13 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/conf.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="43" column="4" selection-start="1254" selection-end="1365" vertical-scroll-proportion="0.0" vertical-offset="774" max-vertical-offset="972">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app.yaml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="414">
@@ -599,57 +603,22 @@
     </entry>
     <entry file="file://$USER_HOME$/Downloads/requests/api.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2268">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2268" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/libs/peewee.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="698" column="23" selection-start="19873" selection-end="19877" vertical-scroll-proportion="0.3325301" vertical-offset="12192" max-vertical-offset="54504">
-          <folding />
-        </state>
+        <state line="698" column="23" selection-start="19873" selection-end="19877" vertical-scroll-proportion="0.3325301" vertical-offset="12192" max-vertical-offset="54504" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/libs/bs4/tests/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="440">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="440" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/twitter.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="52" column="22" selection-start="97" selection-end="1933" vertical-scroll-proportion="1.7166276" vertical-offset="203" max-vertical-offset="1044">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/conf.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="43" column="4" selection-start="1254" selection-end="1365" vertical-scroll-proportion="0.0" vertical-offset="545" max-vertical-offset="972">
-          <folding>
-            <element signature="e#0#38#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/manual-restart.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="37" column="34" selection-start="1024" selection-end="1024" vertical-scroll-proportion="0.0" vertical-offset="473" max-vertical-offset="1440">
-          <folding>
-            <element signature="e#0#15#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cron.yaml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="36" selection-start="126" selection-end="126" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="234">
-          <folding>
-            <marker date="1398556530000" expanded="true" signature="0:166" placeholder="cron:" />
-          </folding>
-        </state>
+        <state line="52" column="22" selection-start="97" selection-end="1933" vertical-scroll-proportion="1.7166276" vertical-offset="203" max-vertical-offset="1044" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app.yaml">
@@ -669,15 +638,34 @@
     <entry file="file://$PROJECT_DIR$/discover.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="11" column="45" selection-start="381" selection-end="381" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1656">
-          <folding>
-            <element signature="e#16#27#0" expanded="true" />
-          </folding>
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/manual-restart.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="37" column="34" selection-start="1024" selection-end="1024" vertical-scroll-proportion="0.0" vertical-offset="473" max-vertical-offset="1440">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/conf.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="43" column="4" selection-start="1254" selection-end="1365" vertical-scroll-proportion="0.0" vertical-offset="545" max-vertical-offset="972">
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/news.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="83" column="14" selection-start="4723" selection-end="5004" vertical-scroll-proportion="0.80597013" vertical-offset="1584" max-vertical-offset="2178">
+        <state line="77" column="18" selection-start="4727" selection-end="4741" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1764">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cron.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="12" selection-start="139" selection-end="139" vertical-scroll-proportion="0.16744186" vertical-offset="0" max-vertical-offset="645">
           <folding />
         </state>
       </provider>

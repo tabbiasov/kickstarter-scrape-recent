@@ -5,4 +5,4 @@ cron:
 
 - description: count news and tweets
   url: /news
-  schedule: every day 4:50
+  schedule: every day 3:50
