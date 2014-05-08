@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="390dcfde-f4c8-4e64-bbe1-65659b12f3fe" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/manual-restart.py" afterPath="$PROJECT_DIR$/manual-restart.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/news.py" afterPath="$PROJECT_DIR$/news.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="kickstarter-scrape.iws" />
@@ -50,10 +50,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="news.py" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="news.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/news.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="77" column="18" selection-start="4727" selection-end="4741" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1764">
+            <state line="86" column="14" selection-start="5057" selection-end="5057" vertical-scroll-proportion="0.68899524" vertical-offset="1260" max-vertical-offset="1818">
               <folding />
             </state>
           </provider>
@@ -70,10 +70,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="manual-restart.py" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="manual-restart.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/manual-restart.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="106" column="1" selection-start="3218" selection-end="3218" vertical-scroll-proportion="4.426914" vertical-offset="0" max-vertical-offset="2016">
+            <state line="106" column="1" selection-start="3218" selection-end="3218" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2016">
               <folding>
                 <element signature="e#0#15#0" expanded="true" />
               </folding>
@@ -127,16 +127,16 @@
         <option value="$PROJECT_DIR$/app.yaml" />
         <option value="$PROJECT_DIR$/conf.py" />
         <option value="$PROJECT_DIR$/main.py" />
-        <option value="$PROJECT_DIR$/news.py" />
         <option value="$PROJECT_DIR$/cron.yaml" />
         <option value="$PROJECT_DIR$/discover.py" />
         <option value="$PROJECT_DIR$/manual-restart.py" />
+        <option value="$PROJECT_DIR$/news.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="208" />
-    <option name="y" value="46" />
+    <option name="x" value="476" />
+    <option name="y" value="48" />
     <option name="width" value="1388" />
     <option name="height" value="816" />
   </component>
@@ -500,13 +500,18 @@
       <created>1399298989020</created>
       <updated>1399298989020</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="added manual counter for newrecords">
+      <created>1399565859393</created>
+      <updated>1399565859393</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="208" y="46" width="1388" height="816" extended-state="0" />
+    <frame x="476" y="48" width="1388" height="816" extended-state="0" />
     <editor active="true" />
     <layout>
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32986626" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -522,7 +527,6 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -558,7 +562,8 @@
     <MESSAGE value="testing github" />
     <MESSAGE value="redefined google_count to decode response to utf-8" />
     <MESSAGE value="changed news cron to 3.50 instead of 4.50" />
-    <option name="LAST_COMMIT_MESSAGE" value="changed news cron to 3.50 instead of 4.50" />
+    <MESSAGE value="added manual counter for newrecords" />
+    <option name="LAST_COMMIT_MESSAGE" value="added manual counter for newrecords" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -649,13 +654,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/news.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="77" column="18" selection-start="4727" selection-end="4741" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1764">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/discover.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="34" column="22" selection-start="1040" selection-end="1040" vertical-scroll-proportion="0.0" vertical-offset="1099" max-vertical-offset="1656">
@@ -667,10 +665,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/manual-restart.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="106" column="1" selection-start="3218" selection-end="3218" vertical-scroll-proportion="4.426914" vertical-offset="0" max-vertical-offset="2016">
+        <state line="106" column="1" selection-start="3218" selection-end="3218" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2016">
           <folding>
             <element signature="e#0#15#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/news.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="86" column="14" selection-start="5057" selection-end="5057" vertical-scroll-proportion="0.68899524" vertical-offset="1260" max-vertical-offset="1818">
+          <folding />
         </state>
       </provider>
     </entry>

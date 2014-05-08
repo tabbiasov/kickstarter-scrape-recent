@@ -80,7 +80,10 @@ def google_count():
     soup = BeautifulSoup(r.text.encode('utf-8'))
     line = str(soup.find("div", {"id": "resultStats"}))
     text = re.findall(r'About ([0-9]+,?[0-9]*) results', line)
-    num = int(text[0].replace(',', ''))
+    try:
+        num = int(text[0].replace(',', ''))
+    except IndexError:
+        num = -1
     return num
 
 
