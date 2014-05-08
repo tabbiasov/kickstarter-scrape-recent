@@ -1,5 +1,6 @@
 import requests
 from peewee import *
+import time
 
 db = MySQLDatabase('kickstarter', host='173.194.82.50', user='root', passwd='4509wqwWWR')
 
@@ -53,23 +54,54 @@ hdr = {
 
 db.connect()
 
-News.create_table()
+#News.create_table()
 
 
-def restart():
-    Projects.delete().where(True).execute()
-    i = 0
-    data = requests.get(url(1), headers=hdr).json()['projects']
-    Projects.create(id=data[i]['id'],
-                    name=data[i]['name'],
-                    goal=data[i]['goal'],
-                    currency=data[i]['currency'],
-                    country=data[i]['country'],
-                    created_at=data[i]['created_at'],
-                    launched_at=data[i]['launched_at'],
-                    deadline=data[i]['deadline'],
-                    parent_category=data[i]['category'].get('parent_id', data[i]['category'].get('id')),
-                    location_woeid=data[i]['location']['id'],
-                    creator_id=data[i]['creator']['id'],
-                    disable_communication=data[i]['disable_communication'],
-                    currency_trailing_code=data[i]['currency_trailing_code'])
+#def restart():
+    #Projects.delete().where(True).execute()
+    #i = 0
+    #data = requests.get(url(1), headers=hdr).json()['projects']
+    #Projects.create(id=data[i]['id'],
+    #                name=data[i]['name'],
+    #                goal=data[i]['goal'],
+    #                currency=data[i]['currency'],
+    #                country=data[i]['country'],
+    #                created_at=data[i]['created_at'],
+    #                launched_at=data[i]['launched_at'],
+    #                deadline=data[i]['deadline'],
+    #                parent_category=data[i]['category'].get('parent_id', data[i]['category'].get('id')),
+    #                location_woeid=data[i]['location']['id'],
+    #                creator_id=data[i]['creator']['id'],
+    #                disable_communication=data[i]['disable_communication'],
+    #                currency_trailing_code=data[i]['currency_trailing_code'])
+
+def count_records():
+
+    db.connect()
+
+    end_not_reached = True
+    p = 1
+    delay = 360
+    end_id = Projects\
+        .select()\
+        .where(Projects.deadline >= time.time()-delay)\
+        .order_by(Projects.launched_at.asc())\
+        .first()\
+        .id
+    session_buffer = set()
+
+    while end_not_reached:
+        i = 0
+        data = requests.get(url(p), headers=hdr).json()['projects']
+        while end_not_reached & (i < len(data)):
+            curr_id = data[i]['id']
+            if not(curr_id in session_buffer):
+                session_buffer.add(curr_id)
+            i += 1
+            if curr_id == end_id:
+                end_not_reached = False
+        p += 1
+
+    print(len(session_buffer))
+
+#count_records()

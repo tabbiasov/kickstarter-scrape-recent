@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="390dcfde-f4c8-4e64-bbe1-65659b12f3fe" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cron.yaml" afterPath="$PROJECT_DIR$/cron.yaml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/manual-restart.py" afterPath="$PROJECT_DIR$/manual-restart.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="kickstarter-scrape.iws" />
@@ -16,6 +16,7 @@
   <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/kickstarter-scrape$manual.coverage" NAME="manual-restart Coverage Results" MODIFIED="1398552775679" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/kickstarter-scrape$manual_restart.coverage" NAME="manual-restart Coverage Results" MODIFIED="1399413068930" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/kickstarter-scrape$googlenews.coverage" NAME="googlenews Coverage Results" MODIFIED="1398545858673" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/kickstarter-scrape$dbconn.coverage" NAME="dbconn Coverage Results" MODIFIED="1398454312678" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
@@ -43,7 +44,7 @@
       <file leaf-file-name="main.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="48" column="0" selection-start="1349" selection-end="1349" vertical-scroll-proportion="0.0" vertical-offset="864" max-vertical-offset="1026">
+            <state line="46" column="13" selection-start="1245" selection-end="1245" vertical-scroll-proportion="0.0" vertical-offset="450" max-vertical-offset="1026">
               <folding />
             </state>
           </provider>
@@ -61,25 +62,29 @@
       <file leaf-file-name="discover.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/discover.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="45" selection-start="381" selection-end="381" vertical-scroll-proportion="0.0" vertical-offset="198" max-vertical-offset="1656">
-              <folding />
+            <state line="34" column="22" selection-start="1040" selection-end="1040" vertical-scroll-proportion="0.0" vertical-offset="1099" max-vertical-offset="1656">
+              <folding>
+                <element signature="e#16#27#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="manual-restart.py" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="manual-restart.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/manual-restart.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="37" column="34" selection-start="1024" selection-end="1024" vertical-scroll-proportion="0.0" vertical-offset="666" max-vertical-offset="1440">
-              <folding />
+            <state line="106" column="1" selection-start="3218" selection-end="3218" vertical-scroll-proportion="4.426914" vertical-offset="0" max-vertical-offset="2016">
+              <folding>
+                <element signature="e#0#15#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="cron.yaml" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="cron.yaml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/cron.yaml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="12" selection-start="139" selection-end="139" vertical-scroll-proportion="0.16744186" vertical-offset="0" max-vertical-offset="645">
+            <state line="6" column="12" selection-start="139" selection-end="139" vertical-scroll-proportion="0.0" vertical-offset="108" max-vertical-offset="234">
               <folding />
             </state>
           </provider>
@@ -88,7 +93,7 @@
       <file leaf-file-name="conf.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/conf.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="43" column="4" selection-start="1254" selection-end="1365" vertical-scroll-proportion="0.0" vertical-offset="774" max-vertical-offset="972">
+            <state line="43" column="4" selection-start="1254" selection-end="1365" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="954">
               <folding />
             </state>
           </provider>
@@ -121,19 +126,19 @@
         <option value="$PROJECT_DIR$/google.py" />
         <option value="$PROJECT_DIR$/app.yaml" />
         <option value="$PROJECT_DIR$/conf.py" />
-        <option value="$PROJECT_DIR$/manual-restart.py" />
         <option value="$PROJECT_DIR$/main.py" />
-        <option value="$PROJECT_DIR$/discover.py" />
         <option value="$PROJECT_DIR$/news.py" />
         <option value="$PROJECT_DIR$/cron.yaml" />
+        <option value="$PROJECT_DIR$/discover.py" />
+        <option value="$PROJECT_DIR$/manual-restart.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="114" />
-    <option name="y" value="30" />
-    <option name="width" value="1320" />
-    <option name="height" value="793" />
+    <option name="x" value="208" />
+    <option name="y" value="46" />
+    <option name="width" value="1388" />
+    <option name="height" value="816" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
@@ -167,16 +172,6 @@
             <PATH_ELEMENT>
               <option name="myItemId" value="kickstarter-scrape" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="kickstarter-scrape" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="kickstarter-scrape" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
@@ -501,23 +496,27 @@
       <created>1399036981078</created>
       <updated>1399036981078</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="changed news cron to 3.50 instead of 4.50">
+      <created>1399298989020</created>
+      <updated>1399298989020</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="114" y="30" width="1320" height="793" extended-state="0" />
+    <frame x="208" y="46" width="1388" height="816" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32986626" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26766092" sideWeight="0.65824664" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.26739928" sideWeight="0.6597325" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3415638" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.34051725" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -558,7 +557,8 @@
     </option>
     <MESSAGE value="testing github" />
     <MESSAGE value="redefined google_count to decode response to utf-8" />
-    <option name="LAST_COMMIT_MESSAGE" value="redefined google_count to decode response to utf-8" />
+    <MESSAGE value="changed news cron to 3.50 instead of 4.50" />
+    <option name="LAST_COMMIT_MESSAGE" value="changed news cron to 3.50 instead of 4.50" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -628,23 +628,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/main.py">
+    <entry file="file://$PROJECT_DIR$/cron.yaml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="48" column="0" selection-start="1349" selection-end="1349" vertical-scroll-proportion="0.0" vertical-offset="396" max-vertical-offset="1026">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/discover.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="45" selection-start="381" selection-end="381" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1656">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/manual-restart.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="37" column="34" selection-start="1024" selection-end="1024" vertical-scroll-proportion="0.0" vertical-offset="473" max-vertical-offset="1440">
+        <state line="6" column="12" selection-start="139" selection-end="139" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="234">
           <folding />
         </state>
       </provider>
@@ -656,6 +642,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="46" column="13" selection-start="1245" selection-end="1245" vertical-scroll-proportion="0.0" vertical-offset="505" max-vertical-offset="1026">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/news.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="77" column="18" selection-start="4727" selection-end="4741" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1764">
@@ -663,10 +656,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cron.yaml">
+    <entry file="file://$PROJECT_DIR$/discover.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="12" selection-start="139" selection-end="139" vertical-scroll-proportion="0.16744186" vertical-offset="0" max-vertical-offset="645">
-          <folding />
+        <state line="34" column="22" selection-start="1040" selection-end="1040" vertical-scroll-proportion="0.0" vertical-offset="1099" max-vertical-offset="1656">
+          <folding>
+            <element signature="e#16#27#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/manual-restart.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="106" column="1" selection-start="3218" selection-end="3218" vertical-scroll-proportion="4.426914" vertical-offset="0" max-vertical-offset="2016">
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
