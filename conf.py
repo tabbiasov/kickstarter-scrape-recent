@@ -10,7 +10,6 @@ class AppEngineDatabase(MySQLDatabase):
 
 db = AppEngineDatabase('kickstarter', host='173.194.82.50', instance='starlit-tine-552:kickscrape', user='root', passwd='4509wqwWWR')
 
-
 class Projects(Model):
     id = IntegerField(primary_key=True)
     name = CharField(100)
@@ -44,6 +43,28 @@ class News(Model):
     timestamp = IntegerField(primary_key=True)
     google_count = IntegerField()
     twitter_count = IntegerField()
+
+    class Meta:
+        database = db
+
+
+class Sessions(Model):
+    session_id = PrimaryKeyField()
+    started_at = IntegerField()
+    ended_at = IntegerField()
+    pages_screened = IntegerField()
+    status = CharField(10)
+
+    class Meta:
+        database = db
+
+
+class Snaps(Model):
+    session = ForeignKeyField(Sessions, on_update='CASCADE', on_delete='CASCADE', index=True)
+    id = ForeignKeyField(Projects, on_update='CASCADE', on_delete='CASCADE', index=True)
+    pledged = IntegerField()
+    backers_count = IntegerField()
+    status = CharField(1)
 
     class Meta:
         database = db

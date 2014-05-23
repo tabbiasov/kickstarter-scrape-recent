@@ -55,32 +55,47 @@ def renew_records():
     end_not_reached = True
     p = 1
     delay = 360
+    session_status = 1
+
     end_id = Projects\
         .select()\
         .where(Projects.deadline >= time.time()-delay)\
         .order_by(Projects.launched_at.asc())\
         .first()\
         .id
+
+    session_num = Sessions.select().order_by(Sessions.session_id.desc()).first().session_id + 1
+    session_started = int(time.time())
+
     session_buffer = set()
 
-    while end_not_reached:
-        i = 0
-        data = requests.get(url(p), headers=hdr).json()['projects']
-        while end_not_reached & (i < len(data)):
-            curr_id = data[i]['id']
-            if not(curr_id in session_buffer):
-                session_buffer.add(curr_id)
-                try:
-                    Snapshots.create(timestamp=int(time.time()),
+    try:
+        while end_not_reached:
+            i = 0
+            data = requests.get(url(p), headers=hdr).json()['projects']
+            while end_not_reached & (i < len(data)):
+                curr_id = data[i]['id']
+                if not(curr_id in session_buffer):
+                    session_buffer.add(curr_id)
+                    try:
+                        Snaps.create(session=session_num,
                                      id=curr_id,
                                      pledged=data[i]['pledged'],
                                      backers_count=data[i]['backers_count'],
                                      status=data[i]['state'][0].upper())
-                except Projects.DoesNotExist:
-                    logging.warning('Project ' + str(curr_id) + ' is not in the projects list!')
-            i += 1
-            if curr_id == end_id:
-                end_not_reached = False
-        p += 1
+                    except Projects.DoesNotExist:
+                        logging.warning('Project ' + str(curr_id) + ' is not in the projects list!')
+                i += 1
+                if curr_id == end_id:
+                    end_not_reached = False
+            p += 1
+    except Exception, e:
+        logging.error('Error with message: ' + str(e))
+        session_status = str(e)
 
 
+    Sessions.create(session_id=session_num,
+                    started_at=session_started,
+                    ended_at=int(time.time()),
+                    pages_screened=p,
+                    status=session_status)
