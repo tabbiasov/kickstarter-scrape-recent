@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="390dcfde-f4c8-4e64-bbe1-65659b12f3fe" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/conf.py" afterPath="$PROJECT_DIR$/conf.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/discover.py" afterPath="$PROJECT_DIR$/discover.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/manual-restart.py" afterPath="$PROJECT_DIR$/manual-restart.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="kickstarter-scrape.iws" />
@@ -64,7 +62,7 @@
       <file leaf-file-name="discover.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/discover.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="100" column="42" selection-start="3712" selection-end="3712" vertical-scroll-proportion="2.0023203" vertical-offset="937" max-vertical-offset="1926">
+            <state line="105" column="83" selection-start="3889" selection-end="3889" vertical-scroll-proportion="2.4640372" vertical-offset="828" max-vertical-offset="2016">
               <folding>
                 <element signature="e#16#27#0" expanded="true" />
               </folding>
@@ -137,8 +135,8 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="93" />
-    <option name="y" value="22" />
+    <option name="x" value="121" />
+    <option name="y" value="87" />
     <option name="width" value="1388" />
     <option name="height" value="816" />
   </component>
@@ -499,13 +497,18 @@
       <created>1399566302401</created>
       <updated>1399566302401</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Added Sessions and Snaps instead of Snapshots, where the session is indexed by a number and not by the time.">
+      <created>1400876961808</created>
+      <updated>1400876961808</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="93" y="22" width="1388" height="816" extended-state="0" />
+    <frame x="121" y="87" width="1388" height="816" extended-state="0" />
     <editor active="true" />
     <layout>
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32986626" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -515,13 +518,12 @@
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.34051725" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.34051725" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -559,7 +561,8 @@
     <MESSAGE value="changed news cron to 3.50 instead of 4.50" />
     <MESSAGE value="added manual counter for newrecords" />
     <MESSAGE value="added google count &quot;try&quot; for cases of IndexError" />
-    <option name="LAST_COMMIT_MESSAGE" value="added google count &quot;try&quot; for cases of IndexError" />
+    <MESSAGE value="Added Sessions and Snaps instead of Snapshots, where the session is indexed by a number and not by the time." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added Sessions and Snaps instead of Snapshots, where the session is indexed by a number and not by the time." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -668,7 +671,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/discover.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="100" column="42" selection-start="3712" selection-end="3712" vertical-scroll-proportion="2.0023203" vertical-offset="937" max-vertical-offset="1926">
+        <state line="105" column="83" selection-start="3889" selection-end="3889" vertical-scroll-proportion="2.4640372" vertical-offset="828" max-vertical-offset="2016">
           <folding>
             <element signature="e#16#27#0" expanded="true" />
           </folding>

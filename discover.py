@@ -69,6 +69,12 @@ def renew_records():
 
     session_buffer = set()
 
+    Sessions.create(session_id=session_num,
+                    started_at=0,
+                    ended_at=0,
+                    pages_screened=-1,
+                    status=1)
+
     try:
         while end_not_reached:
             i = 0
@@ -94,8 +100,7 @@ def renew_records():
         session_status = str(e)
 
 
-    Sessions.create(session_id=session_num,
-                    started_at=session_started,
+    Sessions.update(started_at=session_started,
                     ended_at=int(time.time()),
                     pages_screened=p,
-                    status=session_status)
+                    status=session_status).where(Sessions.session_id == session_num)
