@@ -59,7 +59,7 @@ def renew_records():
 
     end_id = Projects\
         .select()\
-        .where(Projects.deadline >= time.time()-delay)\
+        .where(Projects.deadline >= time.time()-delay, Projects.launched_at != 0)\
         .order_by(Projects.launched_at.asc())\
         .first()\
         .id
@@ -70,10 +70,10 @@ def renew_records():
     session_buffer = set()
 
     Sessions.create(session_id=session_num,
-                    started_at=0,
+                    started_at=session_started,
                     ended_at=0,
                     pages_screened=-1,
-                    status=1)
+                    status=0)
 
     try:
         while end_not_reached:
@@ -99,8 +99,8 @@ def renew_records():
         logging.error('Error with message: ' + str(e))
         session_status = str(e)
 
-
-    Sessions.update(started_at=session_started,
-                    ended_at=int(time.time()),
-                    pages_screened=p,
-                    status=session_status).where(Sessions.session_id == session_num)
+    q = Sessions.update(started_at=session_started,
+                        ended_at=int(time.time()),
+                        pages_screened=p,
+                        status=session_status).where(Sessions.session_id == session_num)
+    q.execute()
