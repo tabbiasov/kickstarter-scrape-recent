@@ -2,6 +2,7 @@
 import time
 import logging
 import requests
+from requests.adapters import HTTPAdapter
 from conf import *
 
 def url(p):
@@ -23,9 +24,12 @@ def discover_projects():
     p = 1
     session_buffer = set()
 
+    s = requests.Session()
+    s.mount('https://www.kickstarter.com', HTTPAdapter(max_retries=5))
+
     while new:
         i = 0
-        data = requests.get(url(p), headers=hdr).json()['projects']
+        data = s.get(url(p), headers=hdr).json()['projects']
         while new & (i < len(data)):
             if not(data[i]['id'] in session_buffer):
                 session_buffer.add(data[i]['id'])

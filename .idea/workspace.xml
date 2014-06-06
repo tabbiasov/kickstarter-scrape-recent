@@ -62,7 +62,7 @@
       <file leaf-file-name="discover.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/discover.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="62" column="46" selection-start="2266" selection-end="2266" vertical-scroll-proportion="0.4988399" vertical-offset="901" max-vertical-offset="1998">
+            <state line="33" column="36" selection-start="952" selection-end="952" vertical-scroll-proportion="0.62355655" vertical-offset="324" max-vertical-offset="2070">
               <folding>
                 <element signature="e#16#27#0" expanded="true" />
               </folding>
@@ -73,10 +73,8 @@
       <file leaf-file-name="manual-restart.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/manual-restart.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="0" selection-start="137" selection-end="1629" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2466">
-              <folding>
-                <element signature="e#0#15#0" expanded="true" />
-              </folding>
+            <state line="6" column="0" selection-start="137" selection-end="1629" vertical-scroll-proportion="0.0" vertical-offset="108" max-vertical-offset="2466">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -93,7 +91,7 @@
       <file leaf-file-name="conf.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/conf.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="63" column="50" selection-start="1744" selection-end="1833" vertical-scroll-proportion="0.0" vertical-offset="829" max-vertical-offset="1332">
+            <state line="55" column="0" selection-start="1562" selection-end="1562" vertical-scroll-proportion="0.0" vertical-offset="639" max-vertical-offset="1332">
               <folding />
             </state>
           </provider>
@@ -135,7 +133,7 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="199" />
+    <option name="x" value="52" />
     <option name="y" value="28" />
     <option name="width" value="1388" />
     <option name="height" value="816" />
@@ -505,14 +503,17 @@
       <created>1400881577390</created>
       <updated>1400881577390</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="added Projects.launched_at&gt;0 to find the end_id entry in discover.py to avoid the error of launched_at=0">
+      <created>1400916875621</created>
+      <updated>1400916875621</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="199" y="28" width="1388" height="816" extended-state="0" />
+    <frame x="52" y="28" width="1388" height="816" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32986626" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -522,12 +523,13 @@
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.34051725" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.33954155" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -567,7 +569,8 @@
     <MESSAGE value="added google count &quot;try&quot; for cases of IndexError" />
     <MESSAGE value="Added Sessions and Snaps instead of Snapshots, where the session is indexed by a number and not by the time." />
     <MESSAGE value="Corrected for the record to Sessions to be made before going to Snaps and then updated" />
-    <option name="LAST_COMMIT_MESSAGE" value="Corrected for the record to Sessions to be made before going to Snaps and then updated" />
+    <MESSAGE value="added Projects.launched_at&gt;0 to find the end_id entry in discover.py to avoid the error of launched_at=0" />
+    <option name="LAST_COMMIT_MESSAGE" value="added Projects.launched_at&gt;0 to find the end_id entry in discover.py to avoid the error of launched_at=0" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -654,9 +657,7 @@
     <entry file="file://$PROJECT_DIR$/manual-restart.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="6" column="0" selection-start="137" selection-end="1629" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2466">
-          <folding>
-            <element signature="e#0#15#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -669,14 +670,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/conf.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="63" column="50" selection-start="1744" selection-end="1833" vertical-scroll-proportion="0.0" vertical-offset="829" max-vertical-offset="1332">
+        <state line="55" column="0" selection-start="1562" selection-end="1562" vertical-scroll-proportion="0.0" vertical-offset="639" max-vertical-offset="1332">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/discover.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="62" column="46" selection-start="2266" selection-end="2266" vertical-scroll-proportion="0.4988399" vertical-offset="901" max-vertical-offset="1998">
+        <state line="33" column="36" selection-start="952" selection-end="952" vertical-scroll-proportion="0.62355655" vertical-offset="324" max-vertical-offset="2070">
           <folding>
             <element signature="e#16#27#0" expanded="true" />
           </folding>
