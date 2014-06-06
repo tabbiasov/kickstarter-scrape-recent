@@ -25,7 +25,7 @@ def discover_projects():
     session_buffer = set()
 
     s = requests.Session()
-    s.mount('https://www.kickstarter.com', HTTPAdapter(max_retries=5))
+    s.mount('https://www.kickstarter.com', HTTPAdapter(max_retries=10))
 
     while new:
         i = 0
