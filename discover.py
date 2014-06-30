@@ -3,6 +3,7 @@ import time
 import logging
 import requests
 from requests.adapters import HTTPAdapter
+from google.appengine.api import urlfetch
 from conf import *
 
 def url(p):
@@ -58,36 +59,48 @@ def renew_records():
 
     end_not_reached = True
     p = 1
-    delay = 360
+    delay = 2700  # 45 minutes
     session_status = 1
 
     end_id = Projects\
         .select()\
-        .where(Projects.deadline >= time.time()-delay, Projects.launched_at != 0)\
+        .where(Projects.deadline >= time.time() - delay, Projects.launched_at != 0)\
         .order_by(Projects.launched_at.asc())\
         .first()\
-        .id
+        .id  # Take the earliest launched project from those with deadline not more than 45 minutes before
+             # and with time launched not 0 as a marker of reached end (end_not_reached=false)
 
-    session_num = Sessions.select().order_by(Sessions.session_id.desc()).first().session_id + 1
-    session_started = int(time.time())
+    session_num = Sessions.select().order_by(Sessions.session_id.desc()).first().session_id + 1  # increment session num
+    session_started = int(time.time())  # record session started time
 
-    session_buffer = set()
+    session_buffer = set()  # create an empty session buffer to avoid dealing with project twice during
+                            # one session if some structural changes in projects list occur
+                            # on the side of kickstarter (adding, removing etc.)
 
     Sessions.create(session_id=session_num,
                     started_at=session_started,
                     ended_at=0,
                     pages_screened=-1,
-                    status=0)
+                    status=0)  # record initial session params in sessions table
 
-    try:
-        while end_not_reached:
+    s = requests.Session()  # create session for fetching url
+    s.mount('https://www.kickstarter.com', HTTPAdapter(max_retries=10))  # mount specific adapter to the session
+                                                                         # that wou use max_retires=10 for the prefix
+
+    urlfetch.set_default_fetch_deadline(30)  # set 30 secs for default fetch deadline in GAE
+
+    try:  # to avoid breaks in execution use exceptions for any errors and record error codes in the end
+        while end_not_reached:  # while the marker project is not reached
             i = 0
-            data = requests.get(url(p), headers=hdr).json()['projects']
-            while end_not_reached & (i < len(data)):
-                curr_id = data[i]['id']
-                if not(curr_id in session_buffer):
-                    session_buffer.add(curr_id)
-                    try:
+            data = s.get(url(p), headers=hdr).json()['projects']  # request all info from a page
+                                                                  # in JSON and parse it to a dictionary
+            while end_not_reached & (i < len(data)):  # check for the page end
+                curr_id = data[i]['id']  # remember the current project's ID to avoid quering twice
+                if not(curr_id in session_buffer):  # if this ID was not managed before, deal with it
+                                                    # if it was, go ahead
+                    session_buffer.add(curr_id)  # if not dealt before add the ID to the session buffer
+                    try:  # if the project is not yet in the database (projects. table)
+                          # it will not make records for it to keep consistency of snaps table and projects table
                         Snaps.create(session=session_num,
                                      id=curr_id,
                                      pledged=data[i]['pledged'],
@@ -95,11 +108,12 @@ def renew_records():
                                      status=data[i]['state'][0].upper())
                     except Projects.DoesNotExist:
                         logging.warning('Project ' + str(curr_id) + ' is not in the projects list!')
+                        # if the project is not yet in the database send warning
                 i += 1
-                if curr_id == end_id:
+                if curr_id == end_id:  # check whether marker project is reached, which means the end of list
                     end_not_reached = False
             p += 1
-    except Exception, e:
+    except Exception, e:  # in case of any exception record its message to include in sessions table
         logging.error('Error with message: ' + str(e))
         session_status = str(e)
 
@@ -107,4 +121,5 @@ def renew_records():
                         ended_at=int(time.time()),
                         pages_screened=p,
                         status=session_status).where(Sessions.session_id == session_num)
+                        #  record resulting session params in sessions table (with error code if an error occured)
     q.execute()
