@@ -24,6 +24,7 @@ class Projects(Model):
     creator_id = IntegerField()
     disable_communication = BooleanField()
     currency_trailing_code = BooleanField()
+    link = CharField(150)
 
     class Meta:
         database = db

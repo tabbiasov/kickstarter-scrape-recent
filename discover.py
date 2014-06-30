@@ -47,7 +47,8 @@ def discover_projects():
                                     location_woeid=data[i]['location']['id'],
                                     creator_id=data[i]['creator']['id'],
                                     disable_communication=data[i]['disable_communication'],
-                                    currency_trailing_code=data[i]['currency_trailing_code'])
+                                    currency_trailing_code=data[i]['currency_trailing_code'],
+                                    link=data[i]['urls']['web']['project'])
                 except IntegrityError:
                     new = False
             i += 1
