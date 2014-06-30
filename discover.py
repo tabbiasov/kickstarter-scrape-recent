@@ -62,13 +62,16 @@ def renew_records():
     delay = 2700  # 45 minutes
     session_status = 1
 
-    end_id = Projects\
+    marker_project = Projects\
         .select()\
         .where(Projects.deadline >= time.time() - delay, Projects.launched_at != 0)\
         .order_by(Projects.launched_at.asc())\
-        .first()\
-        .id  # Take the earliest launched project from those with deadline not more than 45 minutes before
+        .first()
+
+    end_id = marker_project.id
+     # Take the earliest launched project from those with deadline not more than 45 minutes before
              # and with time launched not 0 as a marker of reached end (end_not_reached=false)
+    full_stop_launched_at = marker_project.launched_at
 
     session_num = Sessions.select().order_by(Sessions.session_id.desc()).first().session_id + 1  # increment session num
     session_started = int(time.time())  # record session started time
@@ -96,22 +99,26 @@ def renew_records():
                                                                   # in JSON and parse it to a dictionary
             while end_not_reached & (i < len(data)):  # check for the page end
                 curr_id = data[i]['id']  # remember the current project's ID to avoid quering twice
-                if not(curr_id in session_buffer):  # if this ID was not managed before, deal with it
-                                                    # if it was, go ahead
-                    session_buffer.add(curr_id)  # if not dealt before add the ID to the session buffer
-                    try:  # if the project is not yet in the database (projects. table)
-                          # it will not make records for it to keep consistency of snaps table and projects table
-                        Snaps.create(session=session_num,
-                                     id=curr_id,
-                                     pledged=data[i]['pledged'],
-                                     backers_count=data[i]['backers_count'],
-                                     status=data[i]['state'][0].upper())
-                    except Projects.DoesNotExist:
-                        logging.warning('Project ' + str(curr_id) + ' is not in the projects list!')
-                        # if the project is not yet in the database send warning
-                i += 1
-                if curr_id == end_id:  # check whether marker project is reached, which means the end of list
+                if not (data[i]['launched_at'] < full_stop_launched_at):
+                    if not(curr_id in session_buffer):  # if this ID was not managed before, deal with it
+                                                        # if it was, go ahead
+                        session_buffer.add(curr_id)  # if not dealt before add the ID to the session buffer
+                        try:  # if the project is not yet in the database (projects. table)
+                              # it will not make records for it to keep consistency of snaps table and projects table
+                            Snaps.create(session=session_num,
+                                         id=curr_id,
+                                         pledged=data[i]['pledged'],
+                                         backers_count=data[i]['backers_count'],
+                                         status=data[i]['state'][0].upper())
+                        except Projects.DoesNotExist:
+                            logging.warning('Project ' + str(curr_id) + ' is not in the projects list!')
+                            # if the project is not yet in the database send warning
+                    i += 1
+                    if curr_id == end_id:  # check whether marker project is reached, which means the end of list
+                        end_not_reached = False
+                else:
                     end_not_reached = False
+                    session_status = 2
             p += 1
     except Exception, e:  # in case of any exception record its message to include in sessions table
         logging.error('Error with message: ' + str(e))

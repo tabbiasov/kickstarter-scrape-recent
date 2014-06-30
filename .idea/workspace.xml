@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="390dcfde-f4c8-4e64-bbe1-65659b12f3fe" name="Default" comment="">
+      <change type="MOVED" beforePath="$PROJECT_DIR$/manual-restart.py" afterPath="$PROJECT_DIR$/manual.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/discover.py" afterPath="$PROJECT_DIR$/discover.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -67,7 +68,7 @@
       <file leaf-file-name="discover.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/discover.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="124" column="15" selection-start="6148" selection-end="6148" vertical-scroll-proportion="2.5272207" vertical-offset="1350" max-vertical-offset="2340">
+            <state line="120" column="38" selection-start="5903" selection-end="5903" vertical-scroll-proportion="0.22636104" vertical-offset="2081" max-vertical-offset="2466">
               <folding>
                 <element signature="e#16#27#0" expanded="true" />
               </folding>
@@ -75,11 +76,13 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="manual-restart.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/manual-restart.py">
+      <file leaf-file-name="manual.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/manual.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="29" selection-start="403" selection-end="403" vertical-scroll-proportion="0.0" vertical-offset="108" max-vertical-offset="2430">
-              <folding />
+            <state line="90" column="9" selection-start="2578" selection-end="2578" vertical-scroll-proportion="0.0" vertical-offset="1350" max-vertical-offset="2376">
+              <folding>
+                <element signature="e#0#15#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -125,7 +128,6 @@
         <option value="$PROJECT_DIR$/libs/peewee.py" />
         <option value="$PROJECT_DIR$/dbconn.py" />
         <option value="$PROJECT_DIR$/record.py" />
-        <option value="$PROJECT_DIR$/manual.py" />
         <option value="$PROJECT_DIR$/googlenews.py" />
         <option value="$PROJECT_DIR$/twitter.py" />
         <option value="$PROJECT_DIR$/google.py" />
@@ -135,6 +137,7 @@
         <option value="$PROJECT_DIR$/news.py" />
         <option value="$PROJECT_DIR$/manual-restart.py" />
         <option value="$PROJECT_DIR$/conf.py" />
+        <option value="$PROJECT_DIR$/manual.py" />
         <option value="$PROJECT_DIR$/discover.py" />
       </list>
     </option>
@@ -255,7 +258,7 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="kickstarter-scrape" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/manual-restart.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/manual.py" />
       <option name="PARAMETERS" value="" />
       <RunnerSettings RunnerId="PythonRunner" />
       <ConfigurationWrapper RunnerId="PythonRunner" />
@@ -544,13 +547,18 @@
       <created>1402081571315</created>
       <updated>1402081571315</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="added&#10;http_max_retries=10 and urlfetch deadline = 30 secs&#10;in renew_records &#10;also, fully commented renew_records">
+      <created>1404123367803</created>
+      <updated>1404123367803</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="50" y="22" width="1388" height="746" extended-state="0" />
     <editor active="true" />
     <layout>
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3275862" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32902297" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -566,7 +574,6 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -610,7 +617,8 @@
     <MESSAGE value="added Projects.launched_at&gt;0 to find the end_id entry in discover.py to avoid the error of launched_at=0" />
     <MESSAGE value="added max_retries=5 to requests" />
     <MESSAGE value="added max_retries=10 to requests" />
-    <option name="LAST_COMMIT_MESSAGE" value="added max_retries=10 to requests" />
+    <MESSAGE value="added&#10;http_max_retries=10 and urlfetch deadline = 30 secs&#10;in renew_records &#10;also, fully commented renew_records" />
+    <option name="LAST_COMMIT_MESSAGE" value="added&#10;http_max_retries=10 and urlfetch deadline = 30 secs&#10;in renew_records &#10;also, fully commented renew_records" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -691,13 +699,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/manual-restart.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="29" selection-start="403" selection-end="403" vertical-scroll-proportion="0.0" vertical-offset="108" max-vertical-offset="2430">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/main.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="17" column="25" selection-start="637" selection-end="637" vertical-scroll-proportion="0.0" vertical-offset="410" max-vertical-offset="1026">
@@ -712,9 +713,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/manual.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="90" column="9" selection-start="2578" selection-end="2578" vertical-scroll-proportion="0.0" vertical-offset="1350" max-vertical-offset="2376">
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/discover.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="124" column="15" selection-start="6148" selection-end="6148" vertical-scroll-proportion="2.5272207" vertical-offset="1350" max-vertical-offset="2340">
+        <state line="120" column="38" selection-start="5903" selection-end="5903" vertical-scroll-proportion="0.22636104" vertical-offset="2081" max-vertical-offset="2466">
           <folding>
             <element signature="e#16#27#0" expanded="true" />
           </folding>

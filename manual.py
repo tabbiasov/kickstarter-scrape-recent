@@ -76,11 +76,6 @@ hdr = {
     "X-Requested-With": "XMLHttpRequest",
 }
 
-db.connect()
-Projects.create_table()
-Sessions.create_table()
-Snaps.create_table()
-News.create_table()
 
 def restart():
     Projects.delete().where(True).execute()
