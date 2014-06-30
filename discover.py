@@ -2,6 +2,7 @@
 import time
 import logging
 import requests
+import socket
 from requests.adapters import HTTPAdapter
 from google.appengine.api import urlfetch
 from conf import *
@@ -91,7 +92,9 @@ def renew_records():
     s.mount('https://www.kickstarter.com', HTTPAdapter(max_retries=10))  # mount specific adapter to the session
                                                                          # that wou use max_retires=10 for the prefix
 
-    urlfetch.set_default_fetch_deadline(30)  # set 30 secs for default fetch deadline in GAE
+    urlfetch.set_default_fetch_deadline(45)  # set 30 secs for default fetch deadline in GAE
+    socket.setdefaulttimeout(45)
+
 
     try:  # to avoid breaks in execution use exceptions for any errors and record error codes in the end
         while end_not_reached:  # while the marker project is not reached
