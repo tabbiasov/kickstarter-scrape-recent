@@ -257,7 +257,7 @@ class HTTPConnectionPool(ConnectionPool, RequestMethods):
             # can be removed later
             return Timeout.from_float(timeout)
 
-    def _make_request(self, conn, method, url, timeout=_Default,
+    def _make_request(self, conn, method, url, timeout=30,
                       **httplib_request_kw):
         """
         Perform a request on a given httplib connection object taken from our
