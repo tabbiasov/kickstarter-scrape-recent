@@ -1,0 +1,12 @@
+application: starlit-tine-552
+
+dispatch:
+# Default module serves the typical web resources and all static resources.
+- url: "*/favicon.ico"
+  module: default
+
+- url: "starlit-tine-552.appspot.com/makerecords"
+  module: snaps-and-projects
+
+- url: "starlit-tine-552.appspot.com/makenews"
+  module: news-module

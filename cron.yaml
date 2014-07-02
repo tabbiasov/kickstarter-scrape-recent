@@ -1,8 +1,8 @@
 cron:
 - description: gather pledge dynamics
-  url: /makerecord
+  url: /makerecords
   schedule: every 30 mins
 
 - description: count news and tweets
-  url: /news
+  url: /makenews
   schedule: every day 3:50

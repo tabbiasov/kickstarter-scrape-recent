@@ -1,19 +1,16 @@
 application: starlit-tine-552
-version: 1
+version: uno
 runtime: python27
 api_version: 1
-threadsafe: yes
+threadsafe: true
+
+automatic_scaling:
+  max_idle_instances: 20
 
 handlers:
-- url: /
-  script: main.homeapp
+- url: /favicon\.ico
+  static_files: favicon.ico
+  upload: favicon\.ico
 
-- url: /makerecord
-  script: main.recapp
-
-- url: /news
-  script: main.newsapp
-
-libraries:
-- name: webapp2
-  version: "2.5.2"
+- url: /.*
+  script: helloworld.APP
