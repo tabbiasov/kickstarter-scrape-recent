@@ -95,7 +95,6 @@ def renew_records():
     urlfetch.set_default_fetch_deadline(45)  # set 30 secs for default fetch deadline in GAE
     socket.setdefaulttimeout(45)
 
-
     try:  # to avoid breaks in execution use exceptions for any errors and record error codes in the end
         while end_not_reached:  # while the marker project is not reached
             i = 0
